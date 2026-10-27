@@ -1,0 +1,16 @@
+[package]
+name = "ms-media"
+description = "ffmpeg supervision: transcoded streams and cover resizing, under concurrency caps and deadlines"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+ms-common = { path = "../ms-common" }
+ms-http = { path = "../ms-http" }
+ms-sys = { path = "../ms-sys" }
+
+[lints]
+workspace = true

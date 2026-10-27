@@ -1,0 +1,19 @@
+[package]
+name = "ms-library"
+description = "The music library: scanning, the in-memory index, stable IDs, search, and the index cache"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+ms-common = { path = "../ms-common" }
+ms-crypto = { path = "../ms-crypto" }
+ms-tags = { path = "../ms-tags" }
+
+[dev-dependencies]
+ms-tags = { path = "../ms-tags", features = ["testgen"] }
+
+[lints]
+workspace = true

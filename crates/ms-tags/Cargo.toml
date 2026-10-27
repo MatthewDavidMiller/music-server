@@ -1,0 +1,18 @@
+[package]
+name = "ms-tags"
+description = "Hand-written audio tag and stream-header parsers: ID3, FLAC, Vorbis, Ogg, MP4, WAV"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+ms-common = { path = "../ms-common" }
+
+[features]
+# Builders for synthetic audio files, for other crates' tests.
+testgen = []
+
+[lints]
+workspace = true

@@ -1,0 +1,28 @@
+[package]
+name = "ms-web"
+description = "The music-server binary: configuration, the status page, and the assembled server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+ms-common = { path = "../ms-common" }
+ms-crypto = { path = "../ms-crypto" }
+ms-http = { path = "../ms-http" }
+ms-library = { path = "../ms-library" }
+ms-media = { path = "../ms-media" }
+ms-store = { path = "../ms-store" }
+ms-subsonic = { path = "../ms-subsonic" }
+ms-sys = { path = "../ms-sys" }
+
+[dev-dependencies]
+ms-tags = { path = "../ms-tags", features = ["testgen"] }
+
+[lints]
+workspace = true
+
+[[bin]]
+name = "music-server"
+path = "src/bin/music-server.rs"

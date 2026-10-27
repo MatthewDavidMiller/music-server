@@ -1,0 +1,20 @@
+[package]
+name = "ms-subsonic"
+description = "The Subsonic API: authentication, browsing, lists, playlists, scrobbles, streams, and cover art"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+ms-common = { path = "../ms-common" }
+ms-crypto = { path = "../ms-crypto" }
+ms-http = { path = "../ms-http" }
+ms-library = { path = "../ms-library" }
+ms-media = { path = "../ms-media" }
+ms-store = { path = "../ms-store" }
+ms-tags = { path = "../ms-tags" }
+
+[lints]
+workspace = true

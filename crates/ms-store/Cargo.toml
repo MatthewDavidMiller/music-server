@@ -1,0 +1,15 @@
+[package]
+name = "ms-store"
+description = "The data directory: the sealed account roster and per-user playlists, stars, and plays"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+ms-common = { path = "../ms-common" }
+ms-crypto = { path = "../ms-crypto" }
+
+[lints]
+workspace = true
