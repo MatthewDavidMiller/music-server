@@ -4,28 +4,28 @@ version = 4
 
 [[package]]
 name = "ms-common"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "ms-sys",
 ]
 
 [[package]]
 name = "ms-crypto"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "ms-sys",
 ]
 
 [[package]]
 name = "ms-http"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "ms-common",
 ]
 
 [[package]]
 name = "ms-library"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "ms-common",
  "ms-crypto",
@@ -34,7 +34,7 @@ dependencies = [
 
 [[package]]
 name = "ms-media"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "ms-common",
  "ms-http",
@@ -43,7 +43,7 @@ dependencies = [
 
 [[package]]
 name = "ms-store"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "ms-common",
  "ms-crypto",
@@ -51,7 +51,7 @@ dependencies = [
 
 [[package]]
 name = "ms-subsonic"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "ms-common",
  "ms-crypto",
@@ -64,18 +64,18 @@ dependencies = [
 
 [[package]]
 name = "ms-sys"
-version = "0.1.0"
+version = "0.1.1"
 
 [[package]]
 name = "ms-tags"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "ms-common",
 ]
 
 [[package]]
 name = "ms-web"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "ms-common",
  "ms-crypto",

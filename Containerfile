@@ -17,9 +17,9 @@
 # the users file as Podman secrets and the music mounted read-only; see
 # docs/DEPLOYMENT.md.
 
-ARG ALPINE_DIGEST=sha256:fd791d74b68913cbb027c6546007b3f0d3bc45125f797758156952bc2d6daf40
+ARG ALPINE_DIGEST=sha256:5c216c9767869f6ec7c4718977601d52f087c5c7bf2fdfb198e403f6b48ec40d
 
-FROM docker.io/library/alpine:3.23.5@${ALPINE_DIGEST} AS build
+FROM docker.io/library/alpine:3.23.8@${ALPINE_DIGEST} AS build
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 
@@ -47,7 +47,7 @@ RUN MS_OPENSSL_STATIC=1 \
     && install -m 0755 target/x86_64-unknown-linux-musl/release/music-server /music-server
 
 
-FROM docker.io/library/alpine:3.23.5@${ALPINE_DIGEST}
+FROM docker.io/library/alpine:3.23.8@${ALPINE_DIGEST}
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 
